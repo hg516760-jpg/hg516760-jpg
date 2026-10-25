@@ -1,0 +1,142 @@
+name: Visitor Guestbook
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: guestbook
+  cancel-in-progress: false
+
+jobs:
+  update-guestbook:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'guestbook') || startsWith(github.event.issue.title, 'Guestbook') || startsWith(github.event.issue.title, 'guestbook')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Process & Update Guestbook
+        uses: actions/github-script@v7
+        env:
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        with:
+          script: |
+            const fs = require('fs');
+            const user = process.env.ISSUE_USER;
+            const rawBody = process.env.ISSUE_BODY || '';
+
+            // 1. Extract and sanitize message
+            const formMatch = rawBody.match(/###\s*Your Message\s*([\s\S]*?)(?:###|$)/i);
+            let message = formMatch ? formMatch[1] : rawBody;
+
+            // Strip markdown comments and collapse whitespaces
+            message = message.replace(/<!--[\s\S]*?-->/g, '');
+            message = message.replace(/[\r\n\t]+/g, ' ').trim();
+
+            // Sanitize against HTML injection and markdown table pipes
+            message = message
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#39;')
+              .replace(/\|/g, '&#124;');
+
+            if (message.length > 120) {
+              message = message.substring(0, 117) + '...';
+            }
+
+            if (!message || message.length === 0) {
+              message = 'Stopped by! 👋';
+            }
+
+            // Date format: e.g. "25 Oct 2026"
+            const now = new Date();
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            const dateStr = `${now.getUTCDate()} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()}`;
+
+            // 2. Read and parse README.md
+            const readmePath = 'README.md';
+            let readme = fs.readFileSync(readmePath, 'utf8');
+
+            const startTag = '<!-- GUESTBOOK_START -->';
+            const endTag = '<!-- GUESTBOOK_END -->';
+
+            if (!readme.includes(startTag) || !readme.includes(endTag)) {
+              core.setFailed('Guestbook tags not found in README.md');
+              return;
+            }
+
+            const startIndex = readme.indexOf(startTag) + startTag.length;
+            const endIndex = readme.indexOf(endTag);
+            const currentSection = readme.substring(startIndex, endIndex);
+
+            const newEntry = `| <a href="https://github.com/${user}"><img src="https://github.com/${user}.png" width="30" height="30" style="border-radius:50%;" alt="@${user}" /></a> **[${user}](https://github.com/${user})** | ${message} | ${dateStr} |`;
+
+            const lines = currentSection.trim().split('\n').map(l => l.trim()).filter(Boolean);
+            const header = '| Visitor | Message | Date |\n| :--- | :--- | :---: |';
+
+            const existingEntries = lines.filter(line => 
+              line.startsWith('|') && 
+              !line.includes('Visitor') && 
+              !line.includes(':---')
+            );
+
+            // Keep up to 15 latest entries
+            const updatedEntries = [newEntry, ...existingEntries].slice(0, 15);
+            const updatedSection = `\n${header}\n${updatedEntries.join('\n')}\n`;
+
+            readme = readme.substring(0, startIndex) + updatedSection + readme.substring(endIndex);
+            fs.writeFileSync(readmePath, readme, 'utf8');
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore(guestbook): new entry from @${{ github.event.issue.user.login }} [skip ci]"
+          git push
+
+      - name: Comment, React & Close Issue
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const user = context.payload.issue.user.login;
+            const issue_number = context.issue.number;
+
+            try {
+              await github.rest.reactions.createForIssue({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                content: 'rocket'
+              });
+            } catch (err) {
+              console.log('Reaction note:', err.message);
+            }
+
+            try {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: `✨ Thanks **@${user}** for signing the guestbook! Your note is now live on [my profile](https://github.com/${context.repo.owner}).`
+              });
+            } catch (err) {
+              console.log('Comment note:', err.message);
+            }
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
