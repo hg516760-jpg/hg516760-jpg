@@ -10,12 +10,7 @@
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="32.5%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
-  <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="32.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>&nbsp;
-  
-</p>
+<br />
 
 <p align="center">
   <picture>
@@ -52,7 +47,6 @@
   <img src="./assets/badge-lfc191.png" height="95" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" />
 </p>
 
-
 <br />
 
 <p align="center">
@@ -69,4 +63,20 @@
     <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg">
     <img src="./assets/stats-dark.svg" width="100%" alt="Mayur Pagote's Activity &amp; Open Source Stats" />
   </picture>
+</p>
+
+<br />
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/links-title-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/links-title-light.svg">
+    <img src="./assets/links-title-dark.svg" height="60" alt="Links" />
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="32.5%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
+  <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="32.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>
 </p>
