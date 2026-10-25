@@ -21,7 +21,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-skills-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/tools-skills-light.svg">
-    <img src="./assets/tools-skills-dark.svg" height="75" alt="Tools &amp; Skills" />
+    <img src="./assets/tools-skills-dark.svg" height="60" alt="Tools &amp; Skills" />
   </picture>
 </p>
 
