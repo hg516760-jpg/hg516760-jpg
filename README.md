@@ -3,15 +3,11 @@
 </p>
 
 <p align="center">
-  Hello, I am a 21-year-old CSE student from India.
-</p>
-
-<p align="center">
-  I have good knowledge of Python and have done DSA in C++. I also know Azure and Docker. I have hands-on experience with microcontrollers like ESP32 and ATmega328P.
-</p>
-
-<p align="center">
-  I have an open source project with 120+ Stars, along with that I am Azure Certified.
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/description-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/description-light.svg">
+    <img src="./assets/description-dark.svg" width="100%" alt="About Mayur Pagote" />
+  </picture>
 </p>
 
 <p align="center">
