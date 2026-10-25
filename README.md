@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" alt="Mayur Pagote" width="150%" />
+  <img src="./assets/hero.svg" alt="Mayur Pagote" width="90%" />
 </p>
 
 <p align="center">
