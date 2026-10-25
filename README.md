@@ -21,13 +21,15 @@
 </p>
 
 <p align="center">
-  <img src="./assets/python.svg" width="34" height="34" alt="Python" title="Python" />&nbsp;&nbsp;&nbsp;
-  <img src="./assets/cplusplus.svg" width="34" height="34" alt="C++" title="C++" />&nbsp;&nbsp;&nbsp;
-  <img src="./assets/typescript.svg" width="34" height="34" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;&nbsp;
-  <img src="./assets/react.svg" width="34" height="34" alt="React" title="React" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-python.png" width="34" height="34" alt="Python" title="Python" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-cplusplus.png" width="34" height="34" alt="C++" title="C++" />&nbsp;&nbsp;&nbsp;
   <img src="./assets/docker.svg" width="34" height="34" alt="Docker" title="Docker" />&nbsp;&nbsp;&nbsp;
-  <img src="./assets/azure.svg" width="34" height="34" alt="Microsoft Azure" title="Microsoft Azure" />&nbsp;&nbsp;&nbsp;
-  <img src="./assets/arduino.svg" width="34" height="34" alt="Arduino" title="Arduino" />
+  <img src="./assets/skill-mysql.png" width="34" height="34" alt="MySQL" title="MySQL" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-git.png" width="34" height="34" alt="Git" title="Git" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-github.png" width="34" height="34" alt="GitHub" title="GitHub" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-prometheus.png" width="34" height="34" alt="Prometheus" title="Prometheus" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-grafana.png" width="34" height="34" alt="Grafana" title="Grafana" />&nbsp;&nbsp;&nbsp;
+  <img src="./assets/skill-arduino.png" width="34" height="34" alt="Arduino" title="Arduino" />
 </p>
 
 <br />
