@@ -106,3 +106,10 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Mayur-Pagote&label=PROFILE+VIEWS&style=flat&color=0969da" alt="Profile Views" />
 </p>
+
+<br />
+
+<!-- ==================== ANIMATED PIXEL AVATAR ==================== -->
+<p align="center">
+  <img src="./assets/walking-avatar.gif" width="100%" alt="Pixel Mayur Walking" />
+</p>
