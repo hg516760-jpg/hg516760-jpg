@@ -86,5 +86,15 @@
 <br />
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/thank-you-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/thank-you-light.png">
+    <img src="./assets/thank-you-dark.png" width="100%" alt="Thank You For Visiting" />
+  </picture>
+</p>
+
+<br />
+
+<p align="center">
   <img src="https://komarev.com/ghpvc/?username=Mayur-Pagote&label=PROFILE+VIEWS&style=flat&color=0969da" alt="Profile Views" />
 </p>
