@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/now.svg" width="100%" alt="Now: studying B.Tech CSE, building open-source tools, and exploring Cloud & AI" />
+  <img src="./assets/now.svg" width="100%" alt="Now: studying B.Tech CSE, building open-source tools, and exploring Cloud &amp; AI" />
 </p>
 
 <br />
@@ -28,4 +28,6 @@
 
 <br />
 
-<img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub contribution details" width="100%" />
+<p align="center">
+  <img src="./assets/stats.svg" alt="GitHub Stats — Mayur Pagote" width="100%" />
+</p>
