@@ -1,4 +1,4 @@
-<svg width="880" height="165" viewBox="0 0 880 165" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
+<svg width="880" height="186" viewBox="0 0 880 186" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">Mayur Pagote</title>
   <desc id="desc">Mayur Pagote — Portfolio &amp; Projects</desc>
   <defs>
@@ -38,11 +38,11 @@
     }
   </style>
 
-  <!-- Name signature (increased by 15%: scale 0.51) with bottom fading effect -->
-  <g transform="translate(440, 75) scale(0.51) translate(-486.5, -133.5)">
+  <!-- Name signature (increased by further 15%: scale 0.59) with bottom fading effect -->
+  <g transform="translate(440, 88) scale(0.59) translate(-486.5, -133.5)">
     <use href="#name-path" xlink:href="#name-path" class="title-dark" fill="url(#fade-dark)" />
     <use href="#name-path" xlink:href="#name-path" class="title-light" fill="url(#fade-light)" />
   </g>
 
-  <line x1="2" y1="157" x2="878" y2="157" class="rule" />
+  <line x1="2" y1="178" x2="878" y2="178" class="rule" />
 </svg>
