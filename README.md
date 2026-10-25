@@ -82,3 +82,9 @@
   <a href="https://leetcode.com/u/mayurpagote/" target="_blank" rel="noopener noreferrer"><img src="./assets/link-leetcode.svg" width="32.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/mayurpagote/" target="_blank" rel="noopener noreferrer"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>
 </p>
+
+<br />
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Mayur-Pagote&label=PROFILE+VIEWS&style=flat&color=0969da" alt="Profile Views" />
+</p>
