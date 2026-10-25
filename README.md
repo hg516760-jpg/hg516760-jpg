@@ -29,5 +29,14 @@
 <br />
 
 <p align="center">
-  <img src="./assets/stats.svg" alt="GitHub Stats — Mayur Pagote" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Mayur-Pagote&amp;show_icons=true&amp;include_all_commits=true&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=f0f6fc&amp;text_color=8b949e&amp;icon_color=8b949e">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Mayur-Pagote&amp;show_icons=true&amp;include_all_commits=true&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=1f2328&amp;text_color=656d76&amp;icon_color=656d76">
+    <img src="https://github-readme-stats.vercel.app/api?username=Mayur-Pagote&amp;show_icons=true&amp;include_all_commits=true&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=f0f6fc&amp;text_color=8b949e&amp;icon_color=8b949e" alt="Mayur Pagote's GitHub Stats" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Mayur-Pagote&amp;hide_border=true&amp;background=00000000&amp;ring=c9d1d9&amp;fire=c9d1d9&amp;currStreakNum=f0f6fc&amp;currStreakLabel=c9d1d9&amp;sideNums=f0f6fc&amp;sideLabels=8b949e&amp;dates=6e7681">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=Mayur-Pagote&amp;hide_border=true&amp;background=00000000&amp;ring=57606a&amp;fire=57606a&amp;currStreakNum=1f2328&amp;currStreakLabel=57606a&amp;sideNums=1f2328&amp;sideLabels=656d76&amp;dates=8c959f">
+    <img src="https://streak-stats.demolab.com/?user=Mayur-Pagote&amp;hide_border=true&amp;background=00000000&amp;ring=c9d1d9&amp;fire=c9d1d9&amp;currStreakNum=f0f6fc&amp;currStreakLabel=c9d1d9&amp;sideNums=f0f6fc&amp;sideLabels=8b949e&amp;dates=6e7681" alt="Mayur Pagote's GitHub Streak" />
+  </picture>
 </p>
