@@ -52,13 +52,6 @@
   <img src="./assets/badge-lfc191.png" height="95" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" />
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/badge-google-educator-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/badge-google-educator-light.png">
-    <img src="./assets/badge-google-educator-dark.png" height="38" alt="Google for Education Certified Educator Level 2" />
-  </picture>
-</p>
 
 <br />
 
