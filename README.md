@@ -18,12 +18,12 @@
 </p>
 
 <p align="center">
-  <img src="./assets/now.svg" width="100%" alt="Now: studying B.Tech CSE, building open-source tools, and exploring Cloud &amp; AI" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-skills-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tools-skills-light.svg">
+    <img src="./assets/tools-skills-dark.svg" height="75" alt="Tools &amp; Skills" />
+  </picture>
 </p>
-
-<br />
-
-<h3 align="center">working set</h3>
 
 <p align="center">
   <img src="./assets/python.svg" width="34" height="34" alt="Python" title="Python" />&nbsp;&nbsp;&nbsp;
