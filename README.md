@@ -41,10 +41,10 @@
 </p>
 
 <p align="center">
-  <img src="./assets/badge-az900.png" height="95" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/badge-ai900.png" height="95" alt="Microsoft Certified: Azure AI Fundamentals (AI-900)" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/badge-oracle-ai.png" height="95" alt="Oracle Certified Professional: Oracle AI Vector Search" />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/badge-lfc191.png" height="95" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" />
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/MayurPagote-2501/828E1D23FE079F69?sharingId=D15E5A3DD3C0687E"><img src="./assets/badge-az900.png" height="95" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/MayurPagote-2501/A636D34B0D503B4F?sharingId=D15E5A3DD3C0687E"><img src="./assets/badge-ai900.png" height="95" alt="Microsoft Certified: Azure AI Fundamentals (AI-900)" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=219525F636ADEA950862E70CCC308115F95A5123C865232F9BC1C4AD2BFB28A2"><img src="./assets/badge-oracle-ai.png" height="95" alt="Oracle Certified Professional: Oracle AI Vector Search" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.credly.com/badges/d081967c-3580-4663-8bb2-613bb1015d60"><img src="./assets/badge-lfc191.png" height="95" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" /></a>
 </p>
 
 <br />
@@ -78,5 +78,5 @@
 <p align="center">
   <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="32.5%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
   <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="32.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>
+  <a href="https://www.linkedin.com/in/mayurpagote/"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>
 </p>
