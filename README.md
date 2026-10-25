@@ -41,18 +41,3 @@
     <img src="https://streak-stats.demolab.com/?user=Mayur-Pagote&amp;hide_border=true&amp;background=00000000&amp;ring=c9d1d9&amp;fire=c9d1d9&amp;currStreakNum=f0f6fc&amp;currStreakLabel=c9d1d9&amp;sideNums=f0f6fc&amp;sideLabels=8b949e&amp;dates=6e7681" height="165" alt="Mayur Pagote's GitHub Streak" />
   </picture>
 </p>
-
-<br />
-
-<h3 align="center">guestbook</h3>
-
-<p align="center">
-  <a href="https://github.com/hg516760-jpg/hg516760-jpg/issues/new?template=guestbook.yml&title=Guestbook%3A+%5BYour+Message%5D&labels=guestbook">✍️ <b>Sign the Guestbook</b></a>
-</p>
-
-<!-- GUESTBOOK_START -->
-| Visitor | Message | Date |
-| :--- | :--- | :---: |
-| <a href="https://github.com/hg516760-jpg"><img src="https://github.com/hg516760-jpg.png" width="30" height="30" style="border-radius:50%;" alt="@hg516760-jpg" /></a> **[hg516760-jpg](https://github.com/hg516760-jpg)** | hi | 25 Oct 2026 |
-| <a href="https://github.com/Mayur-Pagote"><img src="https://github.com/Mayur-Pagote.png" width="30" height="30" style="border-radius:50%;" alt="@Mayur-Pagote" /></a> **[Mayur-Pagote](https://github.com/Mayur-Pagote)** | Welcome to my profile guestbook! Leave a note 👋 | 25 Oct 2026 |
-<!-- GUESTBOOK_END -->
