@@ -1,6 +1,6 @@
-<svg width="880" height="190" viewBox="0 0 880 190" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
+<svg width="880" height="165" viewBox="0 0 880 165" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">Mayur Pagote</title>
-  <desc id="desc">open-source tools, clean code, and projects that solve real problems.</desc>
+  <desc id="desc">Mayur Pagote — Portfolio &amp; Projects</desc>
   <defs>
     <!-- Dark mode: Pure crisp white on top, smoothly fading out towards bottom descenders -->
     <linearGradient id="fade-dark" x1="0" y1="0" x2="0" y2="1">
@@ -27,25 +27,22 @@
   </defs>
 
   <style>
-    .copy { font: 400 16px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #57606a; }
     .rule { stroke: #d0d7de; }
     .title-dark { display: none; }
     .title-light { display: inline; }
 
     @media (prefers-color-scheme: dark) {
-      .copy { fill: #8b949e; }
       .rule { stroke: #30363d; }
       .title-dark { display: inline; }
       .title-light { display: none; }
     }
   </style>
 
-  <!-- Name signature (increased by 10%: scale 0.44) with bottom fading effect -->
-  <g transform="translate(440, 72) scale(0.44) translate(-486.5, -133.5)">
+  <!-- Name signature (increased by 15%: scale 0.51) with bottom fading effect -->
+  <g transform="translate(440, 75) scale(0.51) translate(-486.5, -133.5)">
     <use href="#name-path" xlink:href="#name-path" class="title-dark" fill="url(#fade-dark)" />
     <use href="#name-path" xlink:href="#name-path" class="title-light" fill="url(#fade-light)" />
   </g>
 
-  <text x="440" y="152" class="copy" text-anchor="middle">open-source tools, clean code, and projects that solve real problems.</text>
-  <line x1="2" y1="175" x2="878" y2="175" class="rule" />
+  <line x1="2" y1="157" x2="878" y2="157" class="rule" />
 </svg>
