@@ -1,0 +1,18 @@
+name: "✍️ Sign the Guestbook"
+description: "Leave a 1-sentence note to appear on my GitHub profile!"
+title: "Guestbook: [Brief note here]"
+labels: ["guestbook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Welcome to my profile guestbook! 👋
+        Write a short 1-sentence note below. Once submitted, GitHub Actions will automatically sanitize your message and add your avatar, username, and note to the guestbook table on my profile!
+  - type: textarea
+    id: message
+    attributes:
+      label: "Your Message"
+      description: "Keep it friendly, respectful, and under 120 characters."
+      placeholder: "Loved the clean portfolio and Amsterdam typography!"
+    validations:
+      required: true
