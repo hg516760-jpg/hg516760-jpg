@@ -87,9 +87,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/thank-you-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/thank-you-light.png">
-    <img src="./assets/thank-you-dark.png" width="100%" alt="Thank You For Visiting" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/thank-you-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/thank-you-light.svg">
+    <img src="./assets/thank-you-dark.svg" width="70%" alt="Thank You For Visiting" />
   </picture>
 </p>
 
