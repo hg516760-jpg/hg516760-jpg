@@ -1,6 +1,6 @@
-<svg width="880" height="210" viewBox="0 0 880 210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
-  <title id="title">Mayur Pagote, CS student &amp; open-source developer</title>
-  <desc id="desc">Building tools that make a difference.</desc>
+<svg width="880" height="190" viewBox="0 0 880 190" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
+  <title id="title">Mayur Pagote</title>
+  <desc id="desc">open-source tools, clean code, and projects that solve real problems.</desc>
   <defs>
     <!-- Dark mode: Pure crisp white on top, smoothly fading out towards bottom descenders -->
     <linearGradient id="fade-dark" x1="0" y1="0" x2="0" y2="1">
@@ -27,29 +27,25 @@
   </defs>
 
   <style>
-    .label { font: 600 13px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: 2.4px; fill: #57606a; }
     .copy { font: 400 16px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #57606a; }
     .rule { stroke: #d0d7de; }
     .title-dark { display: none; }
     .title-light { display: inline; }
 
     @media (prefers-color-scheme: dark) {
-      .label, .copy { fill: #8b949e; }
+      .copy { fill: #8b949e; }
       .rule { stroke: #30363d; }
       .title-dark { display: inline; }
       .title-light { display: none; }
     }
   </style>
 
-  <text x="440" y="26" class="label" text-anchor="middle">MAYUR PAGOTE / CS STUDENT &amp; DEVELOPER</text>
-  <line x1="2" y1="45" x2="878" y2="45" class="rule" />
-
-  <!-- Name signature with bottom fading effect -->
-  <g transform="translate(440, 99) scale(0.40) translate(-486.5, -133.5)">
+  <!-- Name signature (increased by 10%: scale 0.44) with bottom fading effect -->
+  <g transform="translate(440, 72) scale(0.44) translate(-486.5, -133.5)">
     <use href="#name-path" xlink:href="#name-path" class="title-dark" fill="url(#fade-dark)" />
     <use href="#name-path" xlink:href="#name-path" class="title-light" fill="url(#fade-light)" />
   </g>
 
-  <text x="440" y="170" class="copy" text-anchor="middle">open-source tools, clean code, and projects that solve real problems.</text>
-  <line x1="2" y1="192" x2="878" y2="192" class="rule" />
+  <text x="440" y="152" class="copy" text-anchor="middle">open-source tools, clean code, and projects that solve real problems.</text>
+  <line x1="2" y1="175" x2="878" y2="175" class="rule" />
 </svg>
