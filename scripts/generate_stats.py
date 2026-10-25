@@ -229,48 +229,59 @@ def render_stats_svg(data, palette, uid):
 
     o.append(f'<defs>{make_defs(uid, p)}</defs>')
 
-    # 1. Left section: CONTRIBUTIONS (x: 24 to ~385)
+    # Equal Spacing Coordinates:
+    # Left Margin: 24
+    # Col 1: width 300 (x: 24 to 324)
+    # Gap 1: 48 (x: 324 to 372)
+    # Col 2: width 250 (x: 372 to 622)
+    # Gap 2: 48 (x: 622 to 670)
+    # Col 3: width 330 (x: 670 to 1000)
+    # Right Margin: 24 (1024 - 1000 = 24)
+
+    # 1. Left section: CONTRIBUTIONS (x: 24 to 324, width 300)
+    c1_x = 24
+    c1_w = 300
     days = data['days']
     total_31 = sum(days)
-    chart_w = 350
     chart_h = 100
     top_y = 44
-    o.append(head(24, "CONTRIBUTIONS", f"{total_31:,} in the last {len(days)} days", p))
-    o.append(make_chart(24, top_y, chart_w, chart_h, days, uid, p))
-    o.append(T(24, top_y + chart_h + 23, data['days_from'], size=11, fill=p.dim))
-    o.append(T(24 + chart_w - 4, top_y + chart_h + 23, "today", size=11, fill=p.dim, anchor="end"))
+    o.append(head(c1_x, "CONTRIBUTIONS", f"{total_31:,} in the last {len(days)} days", p))
+    o.append(make_chart(c1_x, top_y, c1_w, chart_h, days, uid, p))
+    o.append(T(c1_x, top_y + chart_h + 23, data['days_from'], size=11, fill=p.dim))
+    o.append(T(c1_x + c1_w, top_y + chart_h + 23, "today", size=11, fill=p.dim, anchor="end"))
 
-    # 2. Middle section: TOTALS (x: 430 to ~675)
-    tx = 430
-    o.append(head(tx, "TOTALS", "", p))
+    # 2. Middle section: TOTALS (x: 372 to 622, width 250)
+    c2_x = 372
+    c2_w = 250
+    o.append(head(c2_x, "TOTALS", "", p))
     total_str = f"{data['total']:,}"
     streak_str = str(data['streak'])
     best_str = str(data['best'])
 
-    # Big numbers
-    o.append(px_text(total_str, tx, top_y - 2, 3, p.ink))
-    lx = tx + 88
+    # Big numbers at 372
+    o.append(px_text(total_str, c2_x, top_y - 2, 3, p.ink))
+    lx = c2_x + 88
     o.append(T(lx, top_y + 14, "contributions", size=12, fill=p.mid))
 
-    o.append(px_text(streak_str, tx, top_y + 28, 3, p.ink))
+    o.append(px_text(streak_str, c2_x, top_y + 28, 3, p.ink))
     o.append(T(lx, top_y + 44, "day streak, current", size=12, fill=p.mid))
 
-    o.append(px_text(best_str, tx, top_y + 58, 3, p.ink))
+    o.append(px_text(best_str, c2_x, top_y + 58, 3, p.ink))
     o.append(T(lx, top_y + 74, "day streak, best", size=12, fill=p.mid))
 
     # Streak bar
     bar_y = top_y + 92
     bar_w = 175
     frac = data['streak'] / data['best'] if data['best'] else 1.0
-    o.append(make_bar(tx, bar_y, bar_w, 14, frac, uid, p))
-    o.append(T(675, bar_y + 13, f"{data['streak']}/{data['best']}", size=15, fill=p.ink, weight=700, anchor="end"))
+    o.append(make_bar(c2_x, bar_y, bar_w, 14, frac, uid, p))
+    o.append(T(c2_x + c2_w, bar_y + 13, f"{data['streak']}/{data['best']}", size=15, fill=p.ink, weight=700, anchor="end"))
 
-    # 3. Right section: OPEN SOURCE (x: 690 to 1000)
-    ox = 690
-    o.append(head(ox, "OPEN SOURCE", "merged prs", p))
+    # 3. Right section: OPEN SOURCE (x: 670 to 1000, width 330)
+    c3_x = 670
+    o.append(head(c3_x, "OPEN SOURCE", "merged prs", p))
     total_prs_str = str(data['total_prs'])
-    o.append(px_text(total_prs_str, ox, top_y - 4, 4, p.ink, f"url(#{uid}-sh)"))
-    plx = ox + px_width(total_prs_str, 4) + 16
+    o.append(px_text(total_prs_str, c3_x, top_y - 4, 4, p.ink, f"url(#{uid}-sh)"))
+    plx = c3_x + px_width(total_prs_str, 4) + 16
     o.append(T(plx, top_y + 9, "merged pull requests", size=12, fill=p.mid))
     o.append(T(plx, top_y + 24, f"{data['total_repos']} public repos, top 7 below", size=11, fill=p.dim))
 
@@ -285,7 +296,7 @@ def render_stats_svg(data, palette, uid):
             rname = rname[:30 - len(owner)] + "…"
         
         o.append(
-            f'<text x="{ox}" y="{_n(ry)}" font-family="{MONO}" font-size="11" fill="{p.dim}">{esc(owner)}'
+            f'<text x="{c3_x}" y="{_n(ry)}" font-family="{MONO}" font-size="11" fill="{p.dim}">{esc(owner)}'
             f'<tspan fill="{p.mid}">{esc(rname)}</tspan></text>'
         )
         o.append(T(970, ry, stars_fmt(stars_cnt), size=11, fill=p.dim, anchor="end"))
