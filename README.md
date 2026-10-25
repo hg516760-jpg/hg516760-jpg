@@ -39,6 +39,14 @@
 
 <p align="center">
   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-title-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stats-title-light.svg">
+    <img src="./assets/stats-title-dark.svg" height="60" alt="Stats" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/stats-light.svg">
     <img src="./assets/stats-dark.svg" width="100%" alt="Mayur Pagote's Activity &amp; Open Source Stats" />
