@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="30%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
-  <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="30%" alt="LeetCode — mayurpagote" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="30%" alt="LinkedIn — Mayur Pagote" /></a>&nbsp;
+  <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="32.5%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
+  <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="32.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="32.5%" alt="LinkedIn — Mayur Pagote" /></a>&nbsp;
   
 </p>
 
