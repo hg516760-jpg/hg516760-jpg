@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" fill="none">
 <style>
+/* <![CDATA[ */
   .line {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 21px;
@@ -9,12 +10,10 @@
   }
   .plain { fill: #ededed; }
   
-  /* Indian Flag Tricolor */
   .ind-s { fill: #ff9933; text-decoration: underline; text-decoration-color: #ff9933; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .ind-w { fill: #ff9933; text-decoration: underline; text-decoration-color: #ffffff; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .ind-g { fill: #22c55e; text-decoration: underline; text-decoration-color: #22c55e; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   
-  /* Tech Underlines & Text Highlights */
   .python { fill: #fbbf24; text-decoration: underline; text-decoration-color: #fbbf24; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .cpp { fill: #4f8cff; text-decoration: underline; text-decoration-color: #4f8cff; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .azure { fill: #0089d6; text-decoration: underline; text-decoration-color: #0089d6; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
@@ -22,6 +21,7 @@
   .micro { fill: #22c55e; text-decoration: underline; text-decoration-color: #22c55e; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .oss { fill: #c084fc; text-decoration: underline; text-decoration-color: #c084fc; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
   .stars { fill: #fbbf24; text-decoration: underline; text-decoration-color: #fbbf24; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }
+/* ]]> */
 </style>
 
 <!-- Paragraph 1 -->

@@ -429,6 +429,7 @@ def render_description_svg(theme="dark"):
     
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
 <style>
+/* <![CDATA[ */
   .line {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 21px;
@@ -449,6 +450,7 @@ def render_description_svg(theme="dark"):
   .micro {{ fill: {green}; text-decoration: underline; text-decoration-color: {green}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
   .oss {{ fill: {purple}; text-decoration: underline; text-decoration-color: {purple}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
   .stars {{ fill: {yellow}; text-decoration: underline; text-decoration-color: {yellow}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+/* ]]> */
 </style>
 
 <!-- Paragraph 1 -->
