@@ -3,6 +3,14 @@
 </p>
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/description-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/description-light.svg">
+    <img src="./assets/description-dark.svg" width="100%" alt="About Mayur Pagote" />
+  </picture>
+</p>
+
+<p align="center">
   <a href="https://mayurpagote.dev"><img src="./assets/link-portfolio.svg" width="23.5%" alt="Portfolio — mayurpagote.dev" /></a>&nbsp;
   <a href="https://leetcode.com/u/mayurpagote/"><img src="./assets/link-leetcode.svg" width="23.5%" alt="LeetCode — mayurpagote" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/mayur-pagote/"><img src="./assets/link-linkedin.svg" width="23.5%" alt="LinkedIn — Mayur Pagote" /></a>&nbsp;

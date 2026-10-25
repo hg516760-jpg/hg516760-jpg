@@ -405,6 +405,81 @@ def fetch_data():
         'oss': oss
     }
 
+def get_age(birth_year=2005, birth_month=1, birth_day=1):
+    today = datetime.now(ZoneInfo(LOCAL_TZ))
+    return today.year - birth_year - ((today.month, today.day) < (birth_month, birth_day))
+
+def render_description_svg(theme="dark"):
+    is_dark = (theme == "dark")
+    age = get_age()
+    
+    plain_color = "#ededed" if is_dark else "#1f2328"
+    white_underline = "#ffffff" if is_dark else "#57606a"
+    
+    saffron = "#ff9933"
+    green = "#22c55e"
+    yellow = "#fbbf24"
+    cpp_blue = "#4f8cff"
+    azure_blue = "#0089d6"
+    docker_blue = "#2496ed"
+    purple = "#c084fc"
+    
+    W = 1000
+    H = 310
+    
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
+<style>
+  .line {{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+  }}
+  .plain {{ fill: {plain_color}; }}
+  
+  .ind-s {{ fill: {saffron}; text-decoration: underline; text-decoration-color: {saffron}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .ind-w {{ fill: {saffron}; text-decoration: underline; text-decoration-color: {white_underline}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .ind-g {{ fill: {green}; text-decoration: underline; text-decoration-color: {green}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  
+  .python {{ fill: {yellow}; text-decoration: underline; text-decoration-color: {yellow}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .cpp {{ fill: {cpp_blue}; text-decoration: underline; text-decoration-color: {cpp_blue}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .azure {{ fill: {azure_blue}; text-decoration: underline; text-decoration-color: {azure_blue}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .docker {{ fill: {docker_blue}; text-decoration: underline; text-decoration-color: {docker_blue}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .micro {{ fill: {green}; text-decoration: underline; text-decoration-color: {green}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .oss {{ fill: {purple}; text-decoration: underline; text-decoration-color: {purple}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+  .stars {{ fill: {yellow}; text-decoration: underline; text-decoration-color: {yellow}; text-underline-offset: 6px; text-decoration-thickness: 3.5px; }}
+</style>
+
+<!-- Paragraph 1 -->
+<text x="32" y="44" class="line">
+  <tspan class="plain">Hello, I am a {age}-year-old CSE student from </tspan><tspan class="ind-s">In</tspan><tspan class="ind-w">d</tspan><tspan class="ind-g">ia</tspan><tspan class="plain">.</tspan>
+</text>
+
+<!-- Paragraph 2 -->
+<text x="32" y="102" class="line">
+  <tspan class="plain">I have good knowledge of </tspan><tspan class="python">Python</tspan><tspan class="plain"> and have done DSA in </tspan><tspan class="cpp">C++</tspan><tspan class="plain">. I</tspan>
+</text>
+
+<text x="32" y="142" class="line">
+  <tspan class="plain">also know </tspan><tspan class="azure">Azure</tspan><tspan class="plain"> and </tspan><tspan class="docker">Docker</tspan><tspan class="plain">. I have hands-on experience with</tspan>
+</text>
+
+<text x="32" y="182" class="line">
+  <tspan class="plain">microcontrollers like </tspan><tspan class="micro">ESP32</tspan><tspan class="plain"> and </tspan><tspan class="micro">ATmega328P</tspan><tspan class="plain">.</tspan>
+</text>
+
+<!-- Paragraph 3 -->
+<text x="32" y="240" class="line">
+  <tspan class="plain">I have a </tspan><tspan class="oss">open source project</tspan><tspan class="plain"> with </tspan><tspan class="stars">120+ Stars</tspan><tspan class="plain">, along with that I am</tspan>
+</text>
+
+<text x="32" y="280" class="line">
+  <tspan class="azure">Azure Certified</tspan><tspan class="plain">.</tspan>
+</text>
+
+</svg>"""
+
 def main():
     print("Fetching live GitHub data for Mayur Pagote...")
     data = fetch_data()
@@ -418,6 +493,14 @@ def main():
     (ASSETS_DIR / "stats-light.svg").write_text(light_svg, encoding="utf-8")
     print(f"Updated {ASSETS_DIR / 'stats-dark.svg'}")
     print(f"Updated {ASSETS_DIR / 'stats-light.svg'}")
+
+    # Generate dynamic description SVGs
+    desc_dark = render_description_svg("dark")
+    desc_light = render_description_svg("light")
+    (ASSETS_DIR / "description-dark.svg").write_text(desc_dark, encoding="utf-8")
+    (ASSETS_DIR / "description-light.svg").write_text(desc_light, encoding="utf-8")
+    print(f"Updated {ASSETS_DIR / 'description-dark.svg'} (age: {get_age()})")
+    print(f"Updated {ASSETS_DIR / 'description-light.svg'} (age: {get_age()})")
 
 if __name__ == "__main__":
     main()
