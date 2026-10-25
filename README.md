@@ -46,13 +46,18 @@
 </p>
 
 <p align="center">
-  <img src="./assets/cert-az900.svg" width="49%" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" />&nbsp;
-  <img src="./assets/cert-ai900.svg" width="49%" alt="Microsoft Certified: Azure AI Fundamentals (AI-900)" />
+  <img src="./assets/badge-az900.png" height="95" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./assets/badge-ai900.png" height="95" alt="Microsoft Certified: Azure AI Fundamentals (AI-900)" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./assets/badge-oracle-ai.png" height="95" alt="Oracle Certified Professional: Oracle AI Vector Search" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./assets/badge-lfc191.png" height="95" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" />
 </p>
 
 <p align="center">
-  <img src="./assets/cert-google-educator.svg" width="49%" alt="Google Certified Educator Level 1" />&nbsp;
-  <img src="./assets/cert-lfc191.svg" width="49%" alt="The Linux Foundation: Open Source Licensing Basics (LFC191)" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/badge-google-educator-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/badge-google-educator-light.png">
+    <img src="./assets/badge-google-educator-dark.png" height="38" alt="Google for Education Certified Educator Level 2" />
+  </picture>
 </p>
 
 <br />
