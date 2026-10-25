@@ -1,7 +1,9 @@
+<!-- ==================== HEADER ==================== -->
 <p align="center">
   <img src="./assets/hero.svg" alt="Mayur Pagote" width="100%" />
 </p>
 
+<!-- ==================== ABOUT ME ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/description-dark.svg">
@@ -12,6 +14,7 @@
 
 <br />
 
+<!-- ==================== TOOLS & SKILLS ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-skills-dark.svg">
@@ -34,6 +37,7 @@
 
 <br />
 
+<!-- ==================== CERTIFICATIONS ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/certifications-title-dark.svg">
@@ -51,6 +55,7 @@
 
 <br />
 
+<!-- ==================== STATS ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-title-dark.svg">
@@ -69,6 +74,7 @@
 
 <br />
 
+<!-- ==================== LINKS ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/links-title-dark.svg">
@@ -85,6 +91,7 @@
 
 <br />
 
+<!-- ==================== THANK YOU ==================== -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/thank-you-dark.svg">
@@ -95,6 +102,7 @@
 
 <br />
 
+<!-- ==================== VISITOR COUNTER ==================== -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Mayur-Pagote&label=PROFILE+VIEWS&style=flat&color=0969da" alt="Profile Views" />
 </p>
